@@ -1,0 +1,25 @@
+{
+    "Attack No.1": {
+        "image_url": "https://upload.wikimedia.org/wikipedia/en/e/e4/Attack_No._1_manga_vol_1.jpg",
+        "genres": [
+            "drama",
+            "romance"
+        ]
+    },
+    "Cleopatra: Queen of Sex": {
+        "image_url": "https://upload.wikimedia.org/wikipedia/en/f/fb/Cleopatra_Tezuka.jpeg",
+        "genres": []
+    },
+    "Tiger Mask": {
+        "image_url": "https://upload.wikimedia.org/wikipedia/en/b/b7/Tiger_Mask_vol_1.jpg",
+        "genres": []
+    },
+    "Tomorrow's Joe": {
+        "image_url": "https://upload.wikimedia.org/wikipedia/en/3/38/Ashita_no_Joe_Volume_1.jpg",
+        "genres": []
+    },
+    "Animal Treasure Island": {
+        "image_url": "https://upload.wikimedia.org/wikipedia/en/a/a3/D%C5%8Dbutsu_Takarajima_FilmPoster.jpeg",
+        "genres": []
+    }
+}
