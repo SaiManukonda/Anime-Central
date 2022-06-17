@@ -36,6 +36,16 @@ def getMainImage(AnimeTitle):
     except:
         return "No image"
 
+def getStoredImage(AnimeTitle):
+    d = open("AnimeImages2.csv", "r")
+    i = 0
+    while(i < 3900):
+        temp = d.readline().strip()
+        temp2 = temp.split(",https")
+        if(temp2[0] == AnimeTitle):
+            return "https"+temp2[1]
+    return "no image"
+
 def search(AnimeTitle):
     animes = dict()
     d = open("AnimeImages2.csv", "r")

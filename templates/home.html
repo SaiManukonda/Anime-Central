@@ -9,12 +9,19 @@
 </head>
 <body style="background-color:rgb(0, 0, 0);">
     <h1 class = "textEdit">{{title}}</h1>
-    <form role="search" id="form" onsubmit="openPage()">
+    <button class="button-35" role="button" onclick="window.location.href='/';">Home</button>
+    <button class="button-35" role="button" onclick="window.location.href='/watched';">Your Watched</button>
+    <button class="button-35" role="button">Personalized Recommendations</button>
+    <button class="button-35" role="button">About Creator</button>
+    <button class="button-35" role="button">Report(Missing Image, Wrong Title, etc)</button>
+    <br>
+    <br>
+    <form class = "form_1"role="search" id="form" onsubmit="openPage()">
         <div></div>
         <input type="search" id="query" name="search"
          placeholder="Search..."
          aria-label="Search through site content">
-        <button onclick="openPage()">
+        <button class = "button-1"onclick="openPage()">
           <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
         </button>
       </form>
@@ -28,6 +35,7 @@
             {%for item in animeInfo%}
             <div class="column">
                 <div class="zoom">
+                    <a href="/title/{{item[:30]}}">
                     <img src="{{animeInfo[item]}}" width="266" height="375">
                   </div>
                   <p class = "textEdit">{{item[:30]}}</p>
